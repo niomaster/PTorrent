@@ -1,0 +1,103 @@
+# depslib dependency file v1.0
+1341247984 source:c:\users\pieter\programming\c++\ptorrent\src\bobject.cpp
+	"../include/BObject.h"
+
+1341247984 e/BObject.h"
+
+1341247916 c:\users\pieter\programming\c++\ptorrent\include\bobject.h
+	<string>
+	<sstream>
+
+1341258363 
+
+1341258363 source:c:\users\pieter\programming\c++\ptorrent\main.cpp
+	"include/BInt.h"
+	"include/BString.h"
+	<windows.h>
+	<iostream>
+
+1341247943 source:c:\users\pieter\programming\c++\ptorrent\src\bint.cpp
+	"../include/BInt.h"
+
+1341247943 e/BInt.h"
+
+1341247956 c:\users\pieter\programming\c++\ptorrent\include\bint.h
+	"BObject.h"
+
+1341248460 "
+
+1341248708 source:c:\users\pieter\programming\c++\ptorrent\src\bstring.cpp
+	"../include/BString.h"
+
+1341248708 e/BString.h"
+
+1341248460 c:\users\pieter\programming\c++\ptorrent\include\bstring.h
+	"BObject.h"
+
+1344375333 source:/windows/Users/Pieter/Programming/C++/PTorrent/main.cpp
+	"include/BInt.h"
+	"include/BString.h"
+	"include/BList.h"
+	"include/BDictionary.h"
+	"include/TorrentMetaData.h"
+	<iostream>
+	<fstream>
+	<map>
+	<stdlib.h>
+	<stdio.h>
+
+1344278526 /windows/Users/Pieter/Programming/C++/PTorrent/include/BInt.h
+	"BObject.h"
+
+1344278576 /windows/Users/Pieter/Programming/C++/PTorrent/include/BObject.h
+	<string>
+	<sstream>
+	<map>
+	"BInt.h"
+	"BString.h"
+	"BList.h"
+	"BDictionary.h"
+
+1344278543 /windows/Users/Pieter/Programming/C++/PTorrent/include/BString.h
+	"BObject.h"
+	<stdlib.h>
+
+1344278439 source:/windows/Users/Pieter/Programming/C++/PTorrent/src/BInt.cpp
+	"../include/BInt.h"
+
+1344278477 source:/windows/Users/Pieter/Programming/C++/PTorrent/src/BObject.cpp
+	"../include/BObject.h"
+
+1344278439 source:/windows/Users/Pieter/Programming/C++/PTorrent/src/BString.cpp
+	"../include/BString.h"
+
+1344278549 /windows/Users/Pieter/Programming/C++/PTorrent/include/BList.h
+	"BObject.h"
+	<list>
+
+1344280381 source:/windows/Users/Pieter/Programming/C++/PTorrent/src/BList.cpp
+	"../include/BList.h"
+
+1344279641 source:/windows/Users/Pieter/Programming/C++/PTorrent/src/BDictionary.cpp
+	"../include/BDictionary.h"
+
+1344279194 /windows/Users/Pieter/Programming/C++/PTorrent/include/BDictionary.h
+	"BObject.h"
+	"BString.h"
+	<map>
+
+1344280106 source:/windows/Users/Pieter/Programming/C++/PTorrent/src/TorrentMetaData.cpp
+	"../include/TorrentMetaData.h"
+
+1344271880 /windows/Users/Pieter/Programming/C++/PTorrent/include/TorrentMetaData.h
+	<string>
+	<list>
+	"FileInfo.h"
+	"BDictionary.h"
+
+1344279671 source:/windows/Users/Pieter/Programming/C++/PTorrent/src/FileInfo.cpp
+	"../include/FileInfo.h"
+
+1344180648 /windows/Users/Pieter/Programming/C++/PTorrent/include/FileInfo.h
+	<string>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include/BDictionary.h" open="1" top="0" tabpos="11">
+		<Cursor position="471" topLine="0" />
+	</File>
+	<File name="include/BInt.h" open="1" top="0" tabpos="4">
+		<Cursor position="348" topLine="0" />
+	</File>
+	<File name="include/BList.h" open="1" top="0" tabpos="8">
+		<Cursor position="376" topLine="0" />
+	</File>
+	<File name="include/BObject.h" open="1" top="0" tabpos="2">
+		<Cursor position="401" topLine="2" />
+	</File>
+	<File name="include/BString.h" open="1" top="0" tabpos="7">
+		<Cursor position="393" topLine="0" />
+	</File>
+	<File name="include/FileInfo.h" open="1" top="0" tabpos="14">
+		<Cursor position="18" topLine="0" />
+	</File>
+	<File name="include/TorrentMetaData.h" open="1" top="0" tabpos="12">
+		<Cursor position="1082" topLine="18" />
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="3437" topLine="102" />
+	</File>
+	<File name="src/BDictionary.cpp" open="1" top="0" tabpos="10">
+		<Cursor position="1446" topLine="54" />
+	</File>
+	<File name="src/BInt.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="859" topLine="34" />
+	</File>
+	<File name="src/BList.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="866" topLine="33" />
+	</File>
+	<File name="src/BObject.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="881" topLine="20" />
+	</File>
+	<File name="src/BString.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="1001" topLine="34" />
+	</File>
+	<File name="src/FileInfo.cpp" open="1" top="0" tabpos="15">
+		<Cursor position="57" topLine="0" />
+	</File>
+	<File name="src/TorrentMetaData.cpp" open="1" top="0" tabpos="13">
+		<Cursor position="555" topLine="32" />
+	</File>
+</CodeBlocks_layout_file>
