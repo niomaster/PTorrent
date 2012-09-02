@@ -34,12 +34,13 @@
 1341248460 c:\users\pieter\programming\c++\ptorrent\include\bstring.h
 	"BObject.h"
 
-1344375333 source:/windows/Users/Pieter/Programming/C++/PTorrent/main.cpp
+1346593678 source:/windows/Users/Pieter/Programming/C++/PTorrent/main.cpp
 	"include/BInt.h"
 	"include/BString.h"
 	"include/BList.h"
 	"include/BDictionary.h"
 	"include/TorrentMetaData.h"
+	"include/Cryptographer.h"
 	<iostream>
 	<fstream>
 	<map>
@@ -100,4 +101,11 @@
 
 1344180648 /windows/Users/Pieter/Programming/C++/PTorrent/include/FileInfo.h
 	<string>
+
+1346593356 source:/windows/Users/Pieter/Programming/C++/PTorrent/src/Cryptographer.cpp
+	"../include/Cryptographer.h"
+
+1346591419 /windows/Users/Pieter/Programming/C++/PTorrent/include/Cryptographer.h
+	<iostream>
+	<string.h>
 

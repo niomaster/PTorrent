@@ -37,6 +37,7 @@
 		<Unit filename="include/BList.h" />
 		<Unit filename="include/BObject.h" />
 		<Unit filename="include/BString.h" />
+		<Unit filename="include/Cryptographer.h" />
 		<Unit filename="include/FileInfo.h" />
 		<Unit filename="include/TorrentMetaData.h" />
 		<Unit filename="main.cpp" />
@@ -45,6 +46,7 @@
 		<Unit filename="src/BList.cpp" />
 		<Unit filename="src/BObject.cpp" />
 		<Unit filename="src/BString.cpp" />
+		<Unit filename="src/Cryptographer.cpp" />
 		<Unit filename="src/FileInfo.cpp" />
 		<Unit filename="src/TorrentMetaData.cpp" />
 		<Extensions>

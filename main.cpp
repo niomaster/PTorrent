@@ -3,6 +3,7 @@
 #include "include/BList.h"
 #include "include/BDictionary.h"
 #include "include/TorrentMetaData.h"
+#include "include/Cryptographer.h"
 
 using namespace std;
 #include <iostream>
@@ -113,17 +114,50 @@ void testBParseDictionary()
         "BParse Dictionary test");
 }
 
-void testTorrentMetaDataRead()
+char toHexit(char byte)
+{
+    return byte < 10 ? '0' + byte : 'a' + (byte - 10);
+}
+
+string toHexString(unsigned char* data, int byteCount)
+{
+    stringstream *stream = new stringstream();
+    for(int i = 0; i < byteCount; i++)
+    {
+        *stream << toHexit(data[i] / 16) << toHexit(data[i] % 16);
+    }
+
+    return stream->str();
+}
+
+void testToHex()
+{
+    assertEquals("2120414dabcd", toHexString((unsigned char *)"! AM\xab\xcd", 6), "Hex test");
+}
+
+void testSha1()
+{
+    stringstream *stream = new stringstream();
+    /**stream << "The quick brown fox jumps over the lazy dog";
+    assertEquals(toHexString(Cryptographer::getSha1(stream, 43), 20),
+                 "2fd4e1c67a2d28fced849ee1bb76e7391b93eb12",
+                 "Sha1 test");*/
+    *stream << "abc";
+    assertEquals(toHexString(Cryptographer::getSha1(stream, 3), 20),
+                 "2fd4e1c67a2d28fced849ee1bb76e7391b93eb12",
+                 "Sha1 test");
+}
+
+void testTorrentMetaDataRead(string filename)
 {
     ifstream fileStream;
-    fileStream.open("/home/pieter/test2.torrent");
+    fileStream.open(filename.c_str());
     BDictionary *dictionary = BDictionary::parse(&fileStream);
     fileStream.close();
 
     //cout << dictionary->toStringPWRT();
 
     TorrentMetaData *metaData = TorrentMetaData::create(dictionary);
-    delete metaData;
     delete dictionary;
     time_t copy = metaData->getCreationDate();
     tm *time = localtime(&copy);
@@ -134,14 +168,16 @@ void testTorrentMetaDataRead()
          << "Encoding: " << metaData->getEncoding() << endl
          << "Comment: \"" << metaData->getComment() << "\"" << endl
          << metaData->getFiles()->size() << " Files in " << metaData->getPieces()->size() << " pieces" << endl << endl;
+    delete metaData;
 }
 
-#undef TEST
-#define FIDDLE
+#define TEST
+#undef BTEST
+#undef FIDDLE
 
 int main()
 {
-    #ifdef TEST
+    #ifdef BTEST
     testBInt();
     testBInt2();
     testBString();
@@ -156,8 +192,13 @@ int main()
     testBParseDictionary();
     #endif
 
+    #ifdef TEST
+    testToHex();
+    testSha1();
+    #endif
+
     #ifdef FIDDLE
-    testTorrentMetaDataRead();
+    testTorrentMetaDataRead("/home/pieter/test2.torrent");
     #endif
 
     cout << "All tests passed. Yay! ^_^" << endl;
